@@ -1,0 +1,30 @@
+{
+  "name": "@t7/domset-svg",
+  "version": "0.1.0",
+  "description": "A 0.3kB JavaScript library for creating DOM+SVG elements",
+  "author": "TandemSeven <github@tandemseven.com>",
+  "license": "CC0-1.0",
+  "repository": "t7/web-components",
+  "homepage": "https://github.com/t7/web-components/tree/master/packages/domset-svg#readme",
+  "bugs": "https://github.com/t7/web-components/issues?q=create-svg",
+  "main": "index.js",
+  "module": "index.mjs",
+  "browser": "browser.js",
+  "files": [
+    "browser.js",
+    "index.js",
+    "index.mjs"
+  ],
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "dependencies": {},
+  "keywords": [
+    "component",
+    "custom",
+    "dom",
+    "element",
+    "web",
+    "webcomponent"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "name": "@t7/accordion-list-element",
+  "version": "0.1.0",
+  "description": "A Web Component for containing a series of Accordion Panel Elements which can be controlled collectively",
+  "author": "TandemSeven <github@tandemseven.com>",
+  "license": "CC0-1.0",
+  "repository": "t7/web-components",
+  "homepage": "https://github.com/t7/web-components/tree/master/packages/accordion-list-element#readme",
+  "bugs": "https://github.com/t7/web-components/issues?q=accordion-list-element",
+  "main": "index.js",
+  "module": "index.mjs",
+  "browser": "browser.js",
+  "files": [
+    "browser.js",
+    "index.js",
+    "index.mjs"
+  ],
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "dependencies": {
+    "@t7/domset": "0.1.0"
+  },
+  "keywords": [
+    "component",
+    "custom",
+    "dom",
+    "element",
+    "web",
+    "webcomponent"
+  ]
+}

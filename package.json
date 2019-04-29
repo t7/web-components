@@ -1,0 +1,45 @@
+{
+  "name": "@t7/web-components",
+  "description": "A collection of Web Components developed at Genpact T7",
+  "author": "TandemSeven <github@tandemseven.com>",
+  "license": "CC0-1.0",
+  "repository": "t7/web-components",
+  "homepage": "https://github.com/t7/web-components#readme",
+  "bugs": "https://github.com/t7/web-components/issues",
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "docs": "jsdoc -c .jsdocrc -d .gh-pages",
+    "postinstall": "git clone --single-branch --branch gh-pages https://github.com/t7/web-components.git .gh-pages",
+    "prestart": "npm run bootstrap",
+    "test": "npm run test:eclint && npm run test:eslint && npm run test:stylelint",
+    "test:eclint": "eclint check",
+    "test:eslint": "eslint packages/*/src/**.js --cache --ignore-path .gitignore",
+    "test:stylelint": "stylelint packages/*/src/**.css --cache",
+    "start": "concurrently --raw \"npx upsite .gh-pages -p 8080 -c empty\" \"lerna exec --parallel -- node ../../scripts/watch.js\""
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "babel-eslint": "^10.0.1",
+    "babel-plugin-import-postcss": "^1.2.0",
+    "concurrently": "^4.1.0",
+    "cssnano": "^4.1.10",
+    "eclint": "^2.8.1",
+    "eslint": "^5.16.0",
+    "fse": "^4.0.1",
+    "gzip-size": "^5.1.0",
+    "lerna": "^3.13.4",
+    "postcss-preset-env": "^6.6.0",
+    "rollup": "^1.10.1",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-commonjs": "^9.3.4",
+    "rollup-plugin-node-resolve": "^4.2.3",
+    "rollup-plugin-terser": "^4.0.4",
+    "stylelint": "^10.0.1",
+    "stylelint-config-dev": "^4.0.0"
+  }
+}

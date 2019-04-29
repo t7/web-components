@@ -1,0 +1,135 @@
+:host {
+	--player-enter-color: color-mod(#9999ff alpha(25%));
+	--player-back-fullscreen-color: color-mod(#000000 alpha(75%));
+	--player-fill-fullscreen-color: #ffffff;
+	--player-range-color: #cccccc;
+	--player-meter-color: #0088dd;
+
+	display: block;
+	font: 300 100%/1.5 "Helvetica Neue", sans-serif;
+}
+
+.media-toolbar {
+	align-items: center;
+	cursor: default;
+	direction: ltr;
+	display: flex;
+	flex-wrap: wrap;
+
+	@nest :host(:fullscreen) & {
+		background-color: var(--player-back-fullscreen-color);
+		color: var(--player-fill-fullscreen-color);
+		inset-block-end: 0;
+		inset-inline: 0;
+		opacity: .8;
+		position: absolute;
+	}
+}
+
+.media-hidden {
+	display: none;
+}
+
+.media-frame {
+	position: relative;
+
+	& iframe {
+		height: 100%;
+		inset: 0;
+		position: absolute;
+		width: 100%;
+	}
+}
+
+.media-media {
+	background-color: #000000;
+	display: block;
+	margin-inline: auto;
+	position: relative;
+	width: 100%;
+
+	&.audio {
+		display: none;
+	}
+
+	@nest :host(:fullscreen) & {
+		height: 100vh;
+		width: 100vw;
+	}
+}
+
+.media-control, .media-slider {
+	background-color: transparent;
+	border-style: none;
+	color: inherit;
+	font: inherit;
+	margin: 0;
+	overflow: visible;
+	padding: 0;
+	-webkit-tap-highlight-color: transparent; /* stylelint-disable-line property-no-vendor-prefix */
+	-webkit-touch-callout: none; /* stylelint-disable-line property-no-vendor-prefix */
+	-webkit-user-select: none; /* stylelint-disable-line property-no-vendor-prefix */
+}
+
+.media-slider {
+	height: 2.5em;
+	padding: .625em .5em;
+
+	&:focus {
+		background-color: var(--player-enter-color);
+	}
+}
+
+.media-time {
+	flex-grow: 1;
+	flex-shrink: 1;
+}
+
+.media-volume {
+	flex-basis: 5em;
+}
+
+.media-range {
+	background-color: var(--player-range-color);
+	display: block;
+	font-size: 75%;
+	height: 1em;
+	width: 100%;
+}
+
+.media-meter {
+	background-color: var(--player-meter-color);
+	display: block;
+	height: 100%;
+	overflow: hidden;
+	width: 100%;
+}
+
+.media-text {
+	font-size: 75%;
+	padding-inline: .5em;
+	white-space: nowrap;
+	width: 2.5em;
+}
+
+.media-control {
+	font-size: 75%;
+	line-height: 1;
+	padding: 1.16667em;
+	text-decoration: none;
+
+	&:matches(:hover, :focus) {
+		background-color: var(--player-enter-color);
+	}
+}
+
+.media-symbol {
+	display: block;
+	fill: currentColor;
+	height: 1em;
+	width: 1em;
+
+	&[hidden="true"] {
+		display: none;
+	}
+}

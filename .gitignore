@@ -1,0 +1,10 @@
+node_modules
+package-lock.json
+*.log*
+.*
+!.editorconfig
+!.eslintrc
+!.gitignore
+!.stylelintrc
+!.travis.yml
+/packages/*/*[.js,.map,.mjs]

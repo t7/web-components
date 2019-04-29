@@ -1,0 +1,25 @@
+:host {
+	display: block;
+}
+
+.control {
+	appearance: none;
+	background-color: transparent;
+	border: 0;
+	color: inherit;
+	display: block;
+	font: inherit;
+	margin: 0;
+	padding: 0;
+	text-align: start;
+	width: 100%;
+}
+
+.region {
+	max-height: 100vh;
+}
+
+.region--hidden {
+	max-height: 0;
+	overflow: hidden;
+}
