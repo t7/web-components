@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en-US" dir="ltr">
+	<title>Domset</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="https://unpkg.com/sanitize.css">
+	<style>body { line-height: 1.5; margin: 5vmax; } h1 a { color: #55d; text-decoration: none; } h1 a:hover, h1 a:focus { box-shadow: 0 1px 0 0; }</style>
+	<script src="index.js"></script>
+	<body>
+		<h1><a href="https://github.com/t7/web-components/tree/master/packages/domset">Domset</a></h1>
+		<p>Domset is a 0.2kB JavaScript library for creating DOM structures.</p>
+		<hr />
+		<main>
+			<script>
+domset(document.body, null,
+	domset('h3', null,
+		'Hello, ', domset('strong', { title: 'Earthly Planet' },
+			'World'
+		), '! This is generated content!'
+	)
+);
+</script>
+
+		</main>
+	</body>
+</html>

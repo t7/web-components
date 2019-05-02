@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en-US" dir="ltr">
+	<title>IntersectionImageElement</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="https://unpkg.com/sanitize.css">
+	<style>body { line-height: 1.5; margin: 5vmax; } h1 a { color: #55d; text-decoration: none; } h1 a:hover, h1 a:focus { box-shadow: 0 1px 0 0; }</style>
+	<script src="index.js"></script>
+	<body>
+		<h1><a href="https://github.com/t7/web-components/tree/master/packages/intersection-image-element">IntersectionImageElement</a></h1>
+		<p>IntersectionImageElement is a Web Component for loading an image source after it is partially or fully visible to the viewport.</p>
+		<hr />
+		<main>
+			<style>
+body {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 400px;
+	text-align: center;
+}
+
+intersection-image {
+	background-color: #ccc;
+	margin: 150vh 0 25vh;
+}
+</style>
+<p>Scroll down...</p>
+<intersection-image src="https://sloow.me/1000/placehold.it/800x400" width="400" height="200"></intersection-image>
+
+		</main>
+	</body>
+</html>

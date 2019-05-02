@@ -1,0 +1,1 @@
+function domset(t,e){const n=null==t?document.createDocumentFragment():t===Object(t)?t:document.createElement(t);for(const t in e)t in n?n[t]=e[t]:null===e[t]&&n.removeAttribute?n.removeAttribute(t):n.setAttribute&&n.setAttribute(t,e[t]);return n.append&&n.append(...Array.prototype.slice.call(arguments,2)),n}

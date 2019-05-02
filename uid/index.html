@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en-US" dir="ltr">
+	<title>Uid</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="https://unpkg.com/sanitize.css">
+	<style>body { line-height: 1.5; margin: 5vmax; } h1 a { color: #55d; text-decoration: none; } h1 a:hover, h1 a:focus { box-shadow: 0 1px 0 0; }</style>
+	<script src="index.js"></script>
+	<body>
+		<h1><a href="https://github.com/t7/web-components/tree/master/packages/uid">Uid</a></h1>
+		<p>Uid is a 140 byte library for generating unique URL-safe IDs.</p>
+		<hr />
+		<main>
+			<script>
+pre = document.createElement('pre');
+
+pre.append(
+	uid(21), '\n',
+	uid(21), '\n',
+	uid(21), '\n',
+	uid(21), '\n',
+	uid(21), '\n',
+	uid(11), '\n',
+	uid(11), '\n',
+	uid(11), '\n',
+	uid(11), '\n',
+	uid(11), '\n',
+	uid(11), '\n',
+	uid(11)
+);
+
+document.body.append(pre);
+</script>
+
+		</main>
+	</body>
+</html>

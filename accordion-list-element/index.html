@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en-US" dir="ltr">
+	<title>AccordionListElement</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="https://unpkg.com/sanitize.css">
+	<style>body { line-height: 1.5; margin: 5vmax; } h1 a { color: #55d; text-decoration: none; } h1 a:hover, h1 a:focus { box-shadow: 0 1px 0 0; }</style>
+	<script src="index.js"></script>
+	<body>
+		<h1><a href="https://github.com/t7/web-components/tree/master/packages/accordion-list-element">AccordionListElement</a></h1>
+		<p>AccordionListElement is a Web Component for containing a series of Accordion Panel Elements which can be controlled collectively.</p>
+		<hr />
+		<main>
+			<script src="../accordion-panel-element/index.js"></script>
+<style>
+body {
+	margin: 0 auto;
+	max-width: 400px;
+}
+</style>
+<h2>
+	Accordion List with a minimum of 1 panel open and a maximum
+	of 2 panels opens.
+</h2>
+<accordion-list min="1" max="2">
+	<accordion-panel label="Accordion Panel 1" open>
+		<p>
+			Content for the first accordion panel.
+		</p>
+	</accordion-panel>
+	<accordion-panel label="Accordion Panel 2">
+		<p>
+			Content for the second accordion panel.
+		</p>
+	</accordion-panel>
+	<accordion-panel label="Accordion Panel 3">
+		<p>
+			Content for the third accordion panel.
+		</p>
+	</accordion-panel>
+</accordion-list>
+
+		</main>
+	</body>
+</html>

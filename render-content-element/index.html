@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en-US" dir="ltr">
+	<title>RenderContentElement</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="https://unpkg.com/sanitize.css">
+	<style>body { line-height: 1.5; margin: 5vmax; } h1 a { color: #55d; text-decoration: none; } h1 a:hover, h1 a:focus { box-shadow: 0 1px 0 0; }</style>
+	<script src="index.js"></script>
+	<body>
+		<h1><a href="https://github.com/t7/web-components/tree/master/packages/render-content-element">RenderContentElement</a></h1>
+		<p>RenderContentElement is a Web Component for displaying content when a condition is met.</p>
+		<hr />
+		<main>
+			<render-content when>
+	<p>
+		This text should be accessible to the user.
+	</p>
+</render-content>
+<render-content>
+	<p>
+		This text should not be accessible to the user.
+	</p>
+</render-content>
+
+		</main>
+	</body>
+</html>
